@@ -66,7 +66,7 @@ The results will be stored as `results.json` in the `path` specified by the conf
 ## Local versus Slurm
 This work was done on a HPC that is running Slurm and as such, supports running model training either locally or distributed throughout the cluster.
 
-This is specified by:
+This is specified in the configuration files by:
 ```Python
 benchmark_config = {
   ...,
@@ -81,4 +81,5 @@ benchmark_config = {
     'type': 'local'
   }
 ```
-Please see the provided configurations for example
+
+As every slurm configuration will be different, please see `src/slurm.py` for slurm parameters for your own slurm HPC.
