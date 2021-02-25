@@ -21,17 +21,17 @@ managing different Python versions.
 
 ## Configs
 The full benchmark configuration can be found at `src/configs/benchmark1.0.json` but as this is impractical to run on a local machine, we have also provided
-a full run on a single dataset `src/configs/local_bench.json`.
+a config for running on a single dataset `src/configs/local_bench.json`.
 These are generated with the associated `src/configs/benchmark1.0.py` and `src/configs/local_bench.py`.
 
-The configs allow you to specify numeras details such as:
+The configs allow you to specify the details:
 * `seed` - The seed to use throughout.
 * `split`- A three-tuple (algotrain, metatrain, test) to determine split sizes.
 * `tasks`- A list of [OpenML](https://www.openml.org/) tasks to run on.
 * `path` - Where all generated models and results are stored.
-* `classifier` - A list of classifier configurations to run
-* `selector` - A list of selector configurations to run
-* `baseline` - A list of baseline algorithms to run
+* `classifier` - A list of classifier configurations to run.
+* `selector` - A list of selector configurations to run.
+* `baseline` - A list of baseline algorithms to run.
 
 Please see the provided configurations for examples.
 
